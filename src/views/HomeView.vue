@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+const asdf = 'fsda'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <p>asdf {{ asdf }}</p>
   </main>
 </template>
