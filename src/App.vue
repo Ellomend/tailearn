@@ -9,8 +9,8 @@ import LayoutFooter from './components/LayoutFooter.vue';
   <div class="flex flex-col h-screen">
     <HeaderComponent />
     <div class="flex">
-      <SidebarComponent class="w-1/5" /> <!-- Modify the width here -->
-      <div class="w-4/5"> <!-- Modify the width here -->
+      <SidebarComponent class="w-1/6" /> <!-- Modify the width here -->
+      <div class="w-5/6"> <!-- Modify the width here -->
         <RouterView />
       </div>
     </div>
