@@ -10,13 +10,7 @@
 </template>
 
 <script setup>
+import { useData } from '@/composables/useData';
 
-// make up some ecommerce categories
-const categories = [
-  { id: 1, name: 'Fruits and Vegetables' },
-  { id: 2, name: 'Meat and Fish' },
-  { id: 3, name: 'Dairy and Eggs' },
-  { id: 4, name: 'Bakery and Pastry' },
-  { id: 5, name: 'Drinks' },
-]
+const { categories } = useData();
 </script>
