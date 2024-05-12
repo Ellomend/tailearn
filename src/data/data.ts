@@ -1,4 +1,30 @@
-export const stores = [
+// Products response interface
+
+export interface Product {
+  id: number
+  categoryId: number
+  name: string
+  price: number
+  status: string
+  storeId: number
+}
+
+// store interface
+export interface Store {
+  id: number
+  name: string
+  address: string
+}
+
+// category interface
+export interface Category {
+  id: number
+  name: string
+}
+
+
+
+export const stores: Store[] = [
   {
     id: 1,
     name: 'Carrefour',
@@ -16,7 +42,7 @@ export const stores = [
   }
 ]
 
-export const categories = [
+export const categories: Category[]= [
   {
     id: 1,
     name: 'Fruits & Vegetables'
@@ -36,7 +62,7 @@ export const categories = [
 ]
 
 // add status to the products
-export const fruitsAndVegetablesProducts = [
+export const fruitsAndVegetablesProducts: Product[]= [
   {
     id: 1,
     categoryId: 1,
@@ -63,7 +89,7 @@ export const fruitsAndVegetablesProducts = [
   }
 ]
 
-export const meatAndFishProducts = [
+export const meatAndFishProducts: Product[]= [
   {
     id: 4,
     categoryId: 2,
@@ -98,7 +124,7 @@ export const meatAndFishProducts = [
   }
 ]
 
-export const dairyProducts = [
+export const dairyProducts: Product[]= [
   {
     id: 8,
     categoryId: 3,
@@ -125,7 +151,7 @@ export const dairyProducts = [
   }
 ]
 
-export const beveragesProducts = [
+export const beveragesProducts: Product[] = [
   {
     id: 11,
     categoryId: 4,
@@ -152,9 +178,14 @@ export const beveragesProducts = [
   }
 ]
 
-export const products = [
+export const products: Product[]= [
   ...fruitsAndVegetablesProducts,
   ...meatAndFishProducts,
   ...dairyProducts,
   ...beveragesProducts
 ]
+
+
+export const getProducts = (): Product[] => products
+
+

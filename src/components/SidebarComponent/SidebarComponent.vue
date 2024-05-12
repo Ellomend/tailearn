@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import { useData } from '@/composables/useData';
+import { useData } from '@/composables/useData.ts';
 
 const { categories } = useData();
 </script>

@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import { categories, products } from '@/data/data'
+import { categories, products } from '@/data/data.ts'
 
 export const useData = () => {
   const productsData = ref(categories)
